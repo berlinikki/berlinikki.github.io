@@ -1,24 +1,72 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>WaZzApp</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>WostoQ-Regenbogen e.V.</title>
     <link href='https://fonts.googleapis.com/css?family=Didact Gothic' rel='stylesheet'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="css/style.css" type="text/css" rel="stylesheet">
+    <script src="scripts/switch.js"></script>
   </head>
 
-  <body onload="welcomeUser()">
+  <body onload="openDefaultTab()">
 
-    <div id="chat_window"></div>
+    <div class="content">
 
-    <div id="bottom_panel">
-      <input id="user_entry">
-      <button id="send_button"></button>
+     <div class="tab">
+      <button id="default" class="tablinks" onclick="openTab(event, 'DE')">DE</button>
+      <button class="tablinks" onclick="openTab(event, 'UA')">UA</button>
+      <button class="tablinks" onclick="openTab(event, 'EN')">EN</button>
+      <button class="tablinks" onclick="openTab(event, 'RU')">RU</button>
+     </div>
+
+     <div class="tabcontent top DE">
+      <p>Herzlich Willkommen! 🤗<br><br>
+        Hier entsteht in Kürze ⏱️ die Webseite des LSBTQ*-Vereins WostoQ-Regenbogen e.V. 🏳️‍🌈🏳️‍⚧️<br><br>
+        Jetzt können Sie uns hier finden:
+      </p>
+     </div>
+    
+    <div class="tabcontent top UA">
+      <p>Ласкаво просимо! 🤗💙💛<br><br>
+        Тут скоро ⏱️ буде сайт ЛГБТК*-організації <br>WostoQ-Regenbogen e.V. 🏳️‍🌈🏳️‍⚧️<br><br>
+        Зараз нас можна знайти тут: 
+      </p>
+    </div>
+    
+    <div class="tabcontent top EN">
+      <p>Welcome! 🤗<br><br>
+        The website of the LGBTQ* organization <br>WostoQ-Regenbogen e.V. 🏳️‍🌈🏳️‍⚧️ will be here soon ⏱️<br><br> 
+        Now you can find us here: 
+      </p>
     </div>
 
-    <script src="scripts/action.js"></script> 
-    <script src="scripts/nouns.js"></script>
-    <script src="scripts/adjectives.js"></script>
+    <div class="tabcontent top RU">
+      <p>Добро пожаловать! 🤗<br><br>
+        Здесь скоро ⏱️ будет сайт ЛГБТК*-организации <br>WostoQ-Regenbogen e.V. 🏳️‍🌈🏳️‍⚧️<br><br>
+        Сейчас нас можно найти здесь:  
+      </p>
+    </div>
+
+    <div class="social">
+      <div class="sn-info"><a href="https://www.facebook.com/WQRegenbogen/" class="fa fa-facebook"></a></div>
+      <div class="sn-info"><a href="https://www.instagram.com/wostoqregenbogen/" class="fa fa-instagram"></a></div>
+    </div>
+
+    <div class="tabcontent bottom DE">
+      <p>Bei allen Fragen schreiben Sie uns bitte eine E-Mail: wostoq.regenbogen@gmail.com 😊</p>
+    </div>
     
+    <div class="tabcontent bottom UA">
+      <p>З усіх питань пишіть нам на електронну пошту: wostoq.regenbogen@gmail.com 😊</p>
+    </div>
+    
+    <div class="tabcontent bottom EN">
+      <p>If you have any questions, please contact us by e-mail: wostoq.regenbogen@gmail.com 😊</p>
+    </div>
+
+    <div class="tabcontent bottom RU">
+      <p>По всем вопросам пишите нам на электронную почту: wostoq.regenbogen@gmail.com 😊</p>
+    </div>
+  </div>
   </body>
 </html>
